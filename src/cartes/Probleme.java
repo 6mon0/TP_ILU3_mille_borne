@@ -1,6 +1,11 @@
 package cartes;
-import Carte;
 
-public abstract class Probleme {
+public abstract class Probleme extends Carte {
+	private Type type;
+	
+	public Probleme(Type type) {
+		this.type = type;
+	}
 
-}
+}	
+
