@@ -1,14 +1,13 @@
 package cartes;
 
-public class Botte extends Probleme{
+public class Botte extends Probleme {
+    public Botte(Type type) {
+        super(type);
+    }
 
-	
-	public Botte(Type type) {
-		super(type);
-	}
-	
-	public toString() {
-		Type type = getType();
-		return type.botte();
-	}
+    
+    @Override
+    public String toString() {
+        return type.getBotte();  // Returns the special card name for the card type
+    }
 }
