@@ -8,6 +8,6 @@ public class Botte extends Probleme {
     
     @Override
     public String toString() {
-        return type.getBotte();  // Returns the special card name for the card type
+        return type.getBotte();
     }
 }
