@@ -1,10 +1,13 @@
 package cartes;
 
-public class DebutLimite extends Limite{
-	
-	
+public class DebutLimite extends Limite {
+
+	public DebutLimite() {
+	}
+
 	@Override
-    public String toString() {
-        return "Limite 50";  // Customize this string as needed
-    }
+	public String toString() {
+		return "Limite 50";
+	}
+	
 }

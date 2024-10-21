@@ -5,11 +5,12 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import cartes.Carte;
+import cartes.JeuDeCartes;
 
 public class Sabot implements Iterable<Carte> {
-	
+
 	private Carte[] cartes;
-	private int nbCartes = 120;
+	private int nbCartes = JeuDeCartes.getNbCartesMax(); // Nombre total de cartes en comptant celels distribu�es en d�but de partie
 	private int nombreOperations = 0;
 	
 	public Sabot(Carte[] cartes) {
@@ -28,7 +29,7 @@ public class Sabot implements Iterable<Carte> {
 			nombreOperations++;
 		}
 	}
-    
+	
 	public Carte piocher() {
 		Iterator<Carte> iter = iterator();
 		Carte carte = iter.next();
@@ -39,7 +40,7 @@ public class Sabot implements Iterable<Carte> {
 	public Iterator<Carte> iterator() {
 		return new Iterateur();
 	}
-
+	
 	private class Iterateur implements Iterator<Carte> {
 		
 		private int indiceIterateur = 0;
