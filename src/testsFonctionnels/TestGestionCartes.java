@@ -31,12 +31,15 @@ public class TestGestionCartes {
 			listeCarteNonMelangee.add(carte);
 		}
 		List<Carte> listeCartes = new ArrayList<>(listeCarteNonMelangee);
-		System.out.println(listeCartes);
+		System.out.println("Liste : \n"+listeCartes);
+		System.out.println("\n");
 		listeCartes = GestionCartes.melanger(listeCartes);
-		System.out.println(listeCartes);
+		System.out.println("Liste mélangée : \n"+listeCartes);
+		System.out.println("\n");
 		System.out.println(
 				"liste melangee sans erreur ? " + GestionCartes.verifierMelange(listeCarteNonMelangee, listeCartes));
 		listeCartes = GestionCartes.rassembler(listeCartes);
+		System.out.println("\n");
 		System.out.println(listeCartes);
 		System.out.println("liste rassemblee sans erreur ? " + GestionCartes.verifierRassemblement(listeCartes));
 		System.out.println();

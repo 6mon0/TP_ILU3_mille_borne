@@ -62,7 +62,7 @@ public class JeuDeCartes {
 				}
 			}
 			if (typesDeCartes[i].getNbExemplaires() != count) {
-				return false;
+				return true;
 			}
 			count = 0;
 		}
